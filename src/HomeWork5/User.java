@@ -20,7 +20,8 @@ public class User {
     public String email = "someEmail@.email.com";
     private String password;
     public boolean isActive;
-    public double amountSpentMoney = 1;
+    public static double amountSpentMoney;
+    public int discount;
 
     public int getAge() {
         return age;
@@ -62,7 +63,26 @@ public class User {
         }
     }
 
+    public void setDiscount (int discount) {
+        this.discount = discount;
+    }
+    public static double printTotalAmountOfSpentMoney (double userTotalAmountOfSpentMoney) {
+        System.out.println("User total amount of spent money: " + userTotalAmountOfSpentMoney);
+        return userTotalAmountOfSpentMoney;
+    }
+
+    public static double makePurchase(double firstNum, double secondNum) {
+        double amountSpentMoney = Calculator.addition((int) firstNum, (int) secondNum);
+        System.out.println("Your purchase price: " + firstNum);
+        return amountSpentMoney;
+    }
+
     public void setAmountSpentMoney(double amountSpentMoney) {
         this.amountSpentMoney = amountSpentMoney;
+    }
+
+    public static void addDiscount(int discount) {
+        double percentage = ((double) discount / amountSpentMoney) * 100;
+        System.out.println("Discount for your purchase is " + discount + "%" + " and it's = " + percentage + " of your money");
     }
 }
