@@ -3,8 +3,8 @@ package HomeWork5;
 import HomeWork5.User;
 import HomeWork5.Calculator;
 
-import static HomeWork5.CashMethods.makePurchase;
-import static HomeWork5.CashMethods.printTotalAmountOfSpentMoney;
+import static HomeWork5.User.makePurchase;
+import static HomeWork5.User.printTotalAmountOfSpentMoney;
 
 public class Main {
     public static void main(String[] args) {
