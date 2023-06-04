@@ -21,6 +21,11 @@ public class Rectangle extends Shape {
         System.out.println("Color of your rectangle is " + this.color);
     }
 
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public static void main(String[] args) {
         Rectangle myFirstRectangle = new Rectangle();
         myFirstRectangle.firstRectangleSide = 4;

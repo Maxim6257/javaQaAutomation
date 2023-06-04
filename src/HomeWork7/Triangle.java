@@ -25,6 +25,11 @@ public class Triangle extends Shape {
         System.out.println("Color of your object - " + this.color);
     }
 
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public static void main(String[] args) {
         Triangle myFirstTriangle = new Triangle();
         myFirstTriangle.firstSide = 5;
