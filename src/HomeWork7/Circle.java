@@ -6,6 +6,12 @@ public class Circle extends Shape {
     public void setCircleRadius() {
         this.circleRadius = circleRadius;
     }
+
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     @Override
     public void calculateArea() {
         double circleArea = Math.PI * Math.pow(this.circleRadius, 2);

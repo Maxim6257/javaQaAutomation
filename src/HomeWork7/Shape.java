@@ -1,18 +1,12 @@
 package HomeWork7;
 
-public class Shape {
+public abstract class Shape {
     String color;
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-    public void calculateArea() {
-    };
-    public void calculatePerimeter() {
+    public abstract void setColor(String color);
+    public abstract void calculateArea();
+    public abstract void calculatePerimeter();
+    public abstract void paint(String color);
 
-    };
-    public void paint(String color) {
-        System.out.println("Color of your object - " + this.color);
-    };
 
 }
